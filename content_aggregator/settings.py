@@ -143,5 +143,3 @@ LOGGING = {
         "level": "INFO",
     },
 }
-
-django_heroku.settings(locals())
