@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 import os
-
+import django_heroku
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -77,7 +77,6 @@ WSGI_APPLICATION = 'content_aggregator.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
-
 DATABASES = {
 
     'default': {
@@ -157,3 +156,5 @@ LOGGING = {
         "level": "INFO",
     },
 }
+
+django_heroku.settings(locals())
