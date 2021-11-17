@@ -79,11 +79,25 @@ WSGI_APPLICATION = 'content_aggregator.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 DATABASES = {
+
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+
+        'ENGINE': 'django.db.backends.postgresql',
+
+        'NAME': 'd8r4mm3v4oq0fv',
+
+        'USER': 'muotxrhuylcnop',
+
+        'PASSWORD': 'ebaa0af2df362f5d3f9ec0baeec069e6ca97a5e9f43888f1647158f3e4bfa822',
+
+        'HOST': 'ec2-54-146-82-179.compute-1.amazonaws.com',
+
+        'PORT': '5432',
+
     }
+
 }
+
 
 
 # Password validation
